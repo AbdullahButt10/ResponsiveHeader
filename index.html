@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- <object class="nav-img" data="times-solid.svg" width="30" height="30"> </object> -->
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- <object class="nav-img" data="bars-solid.svg" width="30" height="30"> </object> -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making Website is now one of the easiest thing in the world. You
+                just need to lear HTML, CSS, <br>Javascript and you are good to go.
+            </p>
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT FOR TOGGLE MENU -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right = "-204px";
+        }
+    </script>
+
+</body>
+</html>
